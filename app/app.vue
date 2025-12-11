@@ -4,4 +4,5 @@
   <FeaturedProducts />
   <NewsletterSection />
   <PromoBanner />
+  <FeaturedCategories />
 </template>

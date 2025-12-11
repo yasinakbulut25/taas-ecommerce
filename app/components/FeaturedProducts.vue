@@ -1,4 +1,6 @@
 <script setup>
+import SectionTitle from "@/components/SectionTitle.vue";
+
 const products = [
   {
     id: 1,
@@ -30,9 +32,7 @@ const products = [
 <template>
   <section class="featured-container">
     <div class="container">
-      <div class="title-wrapper">
-        <h3 class="section-title">Featured products</h3>
-      </div>
+      <SectionTitle text="Featured products" />
 
       <div class="product-grid">
         <div v-for="product in products" :key="product.id" class="product-card">
@@ -53,35 +53,6 @@ const products = [
 <style scoped>
 .featured-container {
   padding: 40px 0;
-}
-
-.title-wrapper {
-  position: relative;
-  margin-bottom: 40px;
-}
-
-.title-wrapper::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 1rem;
-  width: 100%;
-  height: 1px;
-  background-color: #0099a81a;
-  z-index: 0;
-}
-
-.section-title {
-  position: relative;
-  color: var(--color-primary);
-  font-size: 1.5rem;
-  font-weight: 500;
-  margin: 0 auto;
-  display: block;
-  text-align: center;
-  width: 260px;
-  background-color: var(--bg-body);
-  z-index: 1;
 }
 
 .product-grid {
