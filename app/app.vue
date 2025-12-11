@@ -2,4 +2,5 @@
   <Header />
   <HeroSection />
   <FeaturedProducts />
+  <NewsletterSection />
 </template>

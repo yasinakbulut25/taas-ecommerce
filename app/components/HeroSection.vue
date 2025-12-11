@@ -175,7 +175,7 @@ const goToSlide = (index) => (currentSlide.value = index);
 }
 
 .cta-button {
-  background-color: #ff27ad;
+  background-color: var(--color-secondary);
   color: #fff;
   border: none;
   padding: 1rem;
