@@ -12,6 +12,7 @@
   --border-color: #ececec80;
 
   --container-width: 1200px;
+  --bg-body: #fff;
 }
 
 * {
@@ -23,7 +24,7 @@
 body {
   font-family: var(--font-primary);
   background-color: var(--bg-body);
-  color: var(--text-dark);
+  color: var(--text-primary);
   line-height: 1.5;
 }
 
