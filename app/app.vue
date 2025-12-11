@@ -5,4 +5,5 @@
   <NewsletterSection />
   <PromoBanner />
   <FeaturedCategories />
+  <Footer />
 </template>
