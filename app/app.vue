@@ -3,4 +3,5 @@
   <HeroSection />
   <FeaturedProducts />
   <NewsletterSection />
+  <PromoBanner />
 </template>
