@@ -52,7 +52,7 @@ const goToSlide = (index) => (currentSlide.value = index);
       <div :key="currentSlide" class="slide">
         <div class="text-content">
           <h3 class="subtitle">{{ slides[currentSlide].category }}</h3>
-          <h1 class="font-secondary title">{{ slides[currentSlide].title }}</h1>
+          <h2 class="font-secondary title">{{ slides[currentSlide].title }}</h2>
           <p class="description">{{ slides[currentSlide].description }}</p>
 
           <button class="cta-button">
