@@ -47,9 +47,8 @@
       rgba(21, 166, 181, 0.3) 98.69%
     );
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
-  padding: 2rem 0;
   overflow: hidden;
 }
 
@@ -69,7 +68,7 @@
 .promo-container {
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   gap: 2rem;
   position: relative;
@@ -79,12 +78,13 @@
 .product-img-left {
   max-width: 100%;
   height: 292px;
-  margin: 5rem 0 0 0;
+  margin: 4rem 0 0 0;
 }
 
 .promo-right {
   display: flex;
-  align-items: center;
+  align-items: start;
+  padding-top: 2rem;
 }
 
 .offer-card {
@@ -139,11 +139,16 @@
   position: relative;
   max-width: 100%;
   height: 294px;
-  margin: 4rem 0 0 -3rem;
+  margin: 1.5rem 0 0 -3rem;
   z-index: 2;
 }
 
 @media (max-width: 768px) {
+  .promo-container {
+    padding: 2.5rem 0;
+    align-items: center;
+  }
+
   .promo-container,
   .promo-right {
     flex-direction: column;
