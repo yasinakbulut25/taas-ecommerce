@@ -26,10 +26,10 @@
 
         <span class="separate"></span>
 
-        <button class="action-btn cart-btn">
+        <NuxtLink to="/checkout" class="action-btn cart-btn">
           <BasketIcon class="cart-icon" />
           <span class="cart-badge">2</span>
-        </button>
+        </NuxtLink>
       </div>
     </div>
 
@@ -114,6 +114,7 @@ import BasketIcon from "~/assets/icons/BasketIcon.svg";
 
 .cart-btn {
   position: relative;
+  display: flex;
 }
 
 .cart-badge {
