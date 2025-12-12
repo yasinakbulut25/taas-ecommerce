@@ -96,6 +96,10 @@
   transition: background-color 0.3s;
 }
 
+.subscribe-btn:hover {
+  background-color: var(--color-secondary-dark);
+}
+
 @media (max-width: 768px) {
   .newsletter-wrapper {
     flex-direction: column;

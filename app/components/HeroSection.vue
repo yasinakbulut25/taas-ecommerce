@@ -189,6 +189,7 @@ const goToSlide = (index) => (currentSlide.value = index);
 
 .cta-button:hover {
   transform: translateY(-2px);
+  background-color: var(--color-secondary-dark);
 }
 
 .dots {
