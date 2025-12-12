@@ -47,7 +47,7 @@ import PhoneIcon from "~/assets/icons/PhoneIcon.svg";
 .top-link-items {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 0.5rem;
   font-size: 14px;
   font-weight: 400;
   color: #fff;
@@ -57,6 +57,14 @@ import PhoneIcon from "~/assets/icons/PhoneIcon.svg";
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  padding: 0 1rem;
+  border-radius: 0.25rem;
+  line-height: 24px;
+  transition: background-color 0.3s ease;
+}
+
+.link-item:hover {
+  background: #ffffff33;
 }
 
 .header-top-text {
