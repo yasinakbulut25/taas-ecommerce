@@ -95,10 +95,6 @@ const categories = [
   transition: transform 0.3s ease;
 }
 
-.category-card:hover {
-  transform: translateY(-5px);
-}
-
 .content-box {
   width: 100%;
   height: 100%;
@@ -111,6 +107,11 @@ const categories = [
   border-radius: 0.5rem;
   text-align: center;
   background-color: #ffffffe5;
+  transition: background-color 0.3s ease;
+}
+
+.category-card:hover .content-box {
+  background-color: #fff;
 }
 
 .category-title {
@@ -137,5 +138,10 @@ const categories = [
   border-radius: 0.25rem;
   cursor: pointer;
   text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.category-link:hover {
+  background-color: var(--color-primary-dark);
 }
 </style>
