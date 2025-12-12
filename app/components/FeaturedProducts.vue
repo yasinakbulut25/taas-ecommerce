@@ -1,32 +1,6 @@
 <script setup>
-import SectionTitle from "@/components/SectionTitle.vue";
-
-const products = [
-  {
-    id: 1,
-    name: "Herbal Science Boom Butter Hair Care Oil 190 ml",
-    price: "44,95 TL",
-    image: "https://placehold.co/228x152/png?text=Example",
-  },
-  {
-    id: 2,
-    name: "Diadermine Lift + Serum Booster Vitamin C",
-    price: "42,25 TL",
-    image: "https://placehold.co/228x152/png?text=Example",
-  },
-  {
-    id: 3,
-    name: "Ashley Joy Strengthening Shampoo 400ml",
-    price: "29,45 TL",
-    image: "https://placehold.co/228x152/png?text=Example",
-  },
-  {
-    id: 4,
-    name: "Herbal Extract Refreshing Shampoo 400ml",
-    price: "28,95 TL",
-    image: "https://placehold.co/228x152/png?text=Example",
-  },
-];
+const { getFeaturedProducts } = useProducts();
+const { data: products, pending, error } = await getFeaturedProducts();
 </script>
 
 <template>
@@ -37,12 +11,16 @@ const products = [
       <div class="product-grid">
         <div v-for="product in products" :key="product.id" class="product-card">
           <div class="image-wrapper">
-            <img :src="product.image" :alt="product.name" class="product-img" />
+            <img
+              :src="product.images[0]"
+              :alt="product.title"
+              class="product-img"
+            />
           </div>
 
           <div class="info-wrapper">
             <span class="price">{{ product.price }}</span>
-            <h3 class="product-name">{{ product.name }}</h3>
+            <h3 class="product-name">{{ product.title }}</h3>
           </div>
         </div>
       </div>
