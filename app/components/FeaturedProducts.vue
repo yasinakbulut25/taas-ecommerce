@@ -1,4 +1,7 @@
 <script setup>
+import EyeIcon from "~/assets/icons/EyeIcon.svg";
+import BasketIcon from "~/assets/icons/BasketIcon.svg";
+
 const { getFeaturedProducts } = useProducts();
 const { data: products, pending, error } = await getFeaturedProducts();
 </script>
@@ -16,6 +19,15 @@ const { data: products, pending, error } = await getFeaturedProducts();
               :alt="product.title"
               class="product-img"
             />
+            <div class="product-actions">
+              <NuxtLink to="#" class="action-btn">
+                <EyeIcon class="action-icon" />
+                Quick View
+              </NuxtLink>
+              <button class="action-btn">
+                <BasketIcon class="action-icon" /> Add
+              </button>
+            </div>
           </div>
 
           <div class="info-wrapper">
@@ -50,18 +62,66 @@ const { data: products, pending, error } = await getFeaturedProducts();
 }
 
 .image-wrapper {
+  position: relative;
   width: 100%;
   height: 184px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--bg-light);
+  overflow: hidden;
 }
 
 .product-img {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+}
+
+.product-actions {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background-color: #000000cc;
+  transform: translateY(100%);
+  transition: transform 0.25s ease;
+  pointer-events: none;
+}
+
+.action-btn {
+  background-color: transparent;
+  width: max-content;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.25rem 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.action-btn:first-child {
+  border-right: 1px solid #ececec20;
+}
+
+.action-icon {
+  width: 16px;
+  height: 14px;
+  fill: #fff;
+}
+
+.product-card:hover .product-actions {
+  transform: translateY(0);
+  pointer-events: visible;
 }
 
 .info-wrapper {
