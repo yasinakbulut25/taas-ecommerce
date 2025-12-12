@@ -108,7 +108,7 @@ import BasketIcon from "~/assets/icons/BasketIcon.svg";
 .separate {
   display: flex;
   width: 1px;
-  height: 24px;
+  height: 1.5rem;
   background: #ececec;
 }
 

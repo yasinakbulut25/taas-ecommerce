@@ -24,7 +24,7 @@
 .newsletter-container {
   width: 100%;
   background-color: #f2f0ff;
-  padding: 40px 0;
+  padding: 2.5rem 0;
   display: flex;
   justify-content: center;
 }
@@ -34,7 +34,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .text-content {
@@ -45,7 +45,7 @@
   color: var(--text-primary);
   font-size: 24px;
   font-weight: 700;
-  margin: 0 0 8px 0;
+  margin: 0 0 0.5rem 0;
 }
 
 .subtitle {
@@ -65,7 +65,7 @@
 .email-input {
   flex: 1;
   max-width: 412px;
-  height: 48px;
+  height: 3rem;
   padding: 0.75rem 1rem;
   border: 1px solid #ececec;
   border-radius: 0.25rem;
@@ -87,7 +87,7 @@
   background-color: var(--color-secondary);
   color: #fff;
   border: none;
-  padding: 12px 28px;
+  padding: 0.75rem 1.75rem;
   font-size: 14px;
   font-weight: 700;
   border-radius: 0.25rem;

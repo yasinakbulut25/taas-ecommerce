@@ -64,7 +64,7 @@ const categories = [
 
 <style scoped>
 .categories-section {
-  padding: 40px 0;
+  padding: 2.5rem 0;
 }
 
 .category-grid {
@@ -106,7 +106,7 @@ const categories = [
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.5rem;
   padding: 1rem;
   border-radius: 0.5rem;
   text-align: center;

@@ -16,7 +16,7 @@ defineProps({
 <style scoped>
 .title-wrapper {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 .title-wrapper::before {

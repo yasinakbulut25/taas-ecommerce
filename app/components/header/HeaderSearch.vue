@@ -28,8 +28,8 @@ import SearchIcon from "~/assets/icons/SearchIcon.svg";
 }
 
 .search-icon {
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
 }
 
 .search-input {

@@ -52,13 +52,13 @@ const products = [
 
 <style scoped>
 .featured-container {
-  padding: 40px 0;
+  padding: 2.5rem 0;
 }
 
 .product-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 .product-card {
@@ -87,20 +87,21 @@ const products = [
 }
 
 .info-wrapper {
-  padding: 32px;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .price {
   font-size: 20px;
   font-weight: 700;
   color: var(--text-primary);
+  line-height: 1.5rem;
 }
 
 .product-name {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   color: var(--text-secondary);
   margin: 0;
@@ -113,7 +114,7 @@ const products = [
 @media (max-width: 992px) {
   .product-grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 1.25rem;
   }
 }
 
