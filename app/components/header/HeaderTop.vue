@@ -15,11 +15,10 @@
         Watsons Beauty and Personal Care Awards Nominees!
       </p>
       <div class="top-link-items">
-        <a href="tel:+908501234567" class="link-item">
+        <a href="tel:+908501234567" class="link-item phone-link-item">
           Call us<span class="phone-number">:(+90) 850 123 45 67</span>
           <PhoneIcon class="phone-icon" />
         </a>
-        <a href="#" class="link-item"></a>
       </div>
     </div>
   </div>
@@ -84,6 +83,10 @@ import PhoneIcon from "~/assets/icons/PhoneIcon.svg";
 
   .header-top-container {
     justify-content: center;
+  }
+
+  .phone-link-item {
+    flex-direction: row-reverse;
   }
 }
 </style>
