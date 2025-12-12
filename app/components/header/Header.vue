@@ -141,9 +141,10 @@ import BasketIcon from "~/assets/icons/BasketIcon.svg";
   height: 20px;
 }
 
-.desktop-search,
-.mobile-search {
+.desktop-search {
   width: 100%;
+  display: flex;
+  justify-content: end;
 }
 
 .mobile-search {
@@ -170,6 +171,7 @@ import BasketIcon from "~/assets/icons/BasketIcon.svg";
   }
 
   .mobile-search {
+    width: 100%;
     display: flex;
     justify-content: center;
   }
