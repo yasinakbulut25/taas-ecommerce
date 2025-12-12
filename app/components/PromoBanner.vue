@@ -2,7 +2,7 @@
   <section class="promo-section">
     <div class="container promo-container">
       <img
-        src="~/assets/images/promo-product-1.png"
+        src="~/assets/images/promo/promo-product-1.png"
         alt="Nivea Deodorants"
         class="product-img-left"
       />
@@ -21,7 +21,7 @@
         </div>
 
         <img
-          src="~/assets/images/promo-product-2.png"
+          src="~/assets/images/promo/promo-product-2.png"
           alt="Nivea Men"
           class="product-img-right"
         />
@@ -60,7 +60,7 @@
   right: 0;
   width: 100%;
   height: 100%;
-  background-image: url("~/assets/images/promo-bg.png");
+  background-image: url("~/assets/images/promo/promo-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
