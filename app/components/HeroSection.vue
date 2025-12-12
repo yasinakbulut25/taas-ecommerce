@@ -108,7 +108,7 @@ const goToSlide = (index) => (currentSlide.value = index);
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding: 0 2rem;
+  padding: 0 2.5rem;
 }
 
 .content-wrapper .slide {
@@ -120,7 +120,13 @@ const goToSlide = (index) => (currentSlide.value = index);
 
 .nav-arrow {
   background: transparent;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
+  border-radius: 50%;
   cursor: pointer;
   transition: color 0.3s;
   position: absolute;
@@ -132,6 +138,10 @@ const goToSlide = (index) => (currentSlide.value = index);
 .nav-arrow:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+.nav-arrow:hover {
+  background-color: #ececec;
 }
 
 .nav-arrow.left {
