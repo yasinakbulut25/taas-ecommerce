@@ -7,30 +7,36 @@
 
     <div class="payment-container">
       <form class="form-grid">
-        <div class="form-group full-grid">
-          <label for="name">Card Holder Name *</label>
-          <input id="name" placeholder="" />
-          <span class="hint">Full name on card</span>
-        </div>
+        <BaseInput
+          id="cardName"
+          label="Card Holder Name"
+          placeholder=""
+          hint="Full name on card"
+          :isRequired="true"
+          :fullGrid="true"
+        />
 
-        <div class="form-group full-grid">
-          <label for="cardNumber">Card Number *</label>
-          <input id="cardNumber" placeholder="" />
-          <span class="hint">Enter digits without spaces</span>
-        </div>
+        <BaseInput
+          id="cardNumber"
+          label="Card Number"
+          placeholder=""
+          hint="Enter digits without spaces"
+          :isRequired="true"
+          :fullGrid="true"
+        />
 
-        <div class="form-group">
-          <label for="expiryDate">Expiry Date *</label>
-          <input id="expiryDate" placeholder="MM / YY" />
-        </div>
+        <BaseInput
+          id="expiryDate"
+          label="Expiry Date"
+          placeholder="MM / YY"
+          :isRequired="true"
+        />
 
-        <div class="form-group">
-          <label for="cvv">CVV *</label>
-          <div class="cvv-input">
-            <input id="cvv" type="text" />
-            <span class="info-icon">?</span>
-          </div>
-        </div>
+        <BaseInput id="cvv" label="CVV" placeholder="" :isRequired="true">
+          <template #icon>
+            <QuestionMarkIcon />
+          </template>
+        </BaseInput>
 
         <div class="form-footer full-grid">
           <p class="required-note">* Required fields</p>
@@ -45,6 +51,8 @@
 
 <script setup>
 import PaymentIcon from "~/assets/icons/PaymentIcon.svg";
+import QuestionMarkIcon from "~/assets/icons/QuestionMarkIcon.svg";
+import BaseInput from "@/components/form/BaseInput.vue";
 </script>
 
 <style scoped>

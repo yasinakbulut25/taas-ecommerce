@@ -44,11 +44,19 @@
   grid-column: span 2;
 }
 
-label {
+.form-label {
   color: var(--text-primary);
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.input-wrapper {
+  width: 100%;
+  position: relative;
 }
 
 input,
@@ -63,6 +71,22 @@ textarea {
   border-radius: 4px;
   font-size: 14px;
   outline: none;
+  resize: none;
+}
+
+.input-wrapper.has-end input {
+  padding-right: 2.5rem;
+}
+
+.input-end {
+  position: absolute;
+  width: 2.5rem;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
 }
 
 input::placeholder,

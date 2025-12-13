@@ -6,45 +6,61 @@
     </div>
 
     <form class="form-grid">
-      <div class="form-group">
-        <label for="name">First Name *</label>
-        <input id="name" placeholder="" />
-      </div>
+      <BaseInput
+        id="name"
+        label="First Name"
+        placeholder=""
+        :isRequired="true"
+      />
+
+      <BaseInput
+        id="lastName"
+        label="Last Name"
+        placeholder=""
+        :isRequired="true"
+      />
+
+      <BaseInput
+        id="email"
+        type="email"
+        label="Email Address"
+        placeholder=""
+        :isRequired="true"
+      />
+
+      <BaseInput
+        id="phoneNumber"
+        label="Phone Number"
+        placeholder="+90 (5 _ _) _ _ _  _ _  _ _"
+        :isRequired="true"
+      />
 
       <div class="form-group">
-        <label for="lastName">Last Name *</label>
-        <input id="lastName" placeholder="" />
-      </div>
-
-      <div class="form-group">
-        <label for="email">Email Address *</label>
-        <input type="email" id="email" placeholder="" />
-      </div>
-
-      <div class="form-group">
-        <label for="phoneNumber">Phone Number *</label>
-        <input id="phoneNumber" placeholder="+90 (5 _ _) _ _ _  _ _  _ _" />
-      </div>
-
-      <div class="form-group">
-        <label for="city">City *</label>
-        <select id="city">
+        <label for="city" class="form-label">
+          City <span class="required">*</span>
+        </label>
+        <select id="city" required>
           <option>Please select</option>
           <option value="Istanbul">Istanbul</option>
         </select>
       </div>
 
       <div class="form-group">
-        <label for="district">District *</label>
-        <select id="district" disabled>
+        <label for="district" class="form-label">
+          District <span class="required">*</span>
+        </label>
+        <select id="district" disabled required>
           <option>Please select</option>
         </select>
       </div>
 
       <div class="form-group full-grid">
-        <label for="address">Address *</label>
+        <label for="address" class="form-label">
+          Address <span class="required">*</span>
+        </label>
         <textarea
           id="address"
+          required
           rows="3"
           placeholder="Enter neighborhood, street, avenue and other information"
         ></textarea>
@@ -55,4 +71,5 @@
 
 <script setup>
 import ShippingIcon from "~/assets/icons/ShippingIcon.svg";
+import BaseInput from "@/components/form/BaseInput.vue";
 </script>
