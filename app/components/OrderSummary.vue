@@ -74,6 +74,11 @@ const formatPrice = (value) => {
 </template>
 
 <style scoped>
+.summary-section {
+  position: sticky;
+  top: 150px;
+}
+
 .summary-card {
   width: 100%;
   min-width: 360px;
@@ -210,6 +215,13 @@ const formatPrice = (value) => {
   color: var(--text-primary);
   font-weight: 700;
   font-size: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .summary-section {
+    position: relative;
+    top: 0;
+  }
 }
 
 @media screen and (max-width: 468px) {
