@@ -7,7 +7,7 @@
         <PaymentDetails />
       </div>
       <div class="right-col">
-        <div class="order-summary">order-summary</div>
+        <OrderSummary />
       </div>
     </div>
   </section>
