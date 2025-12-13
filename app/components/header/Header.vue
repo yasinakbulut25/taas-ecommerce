@@ -1,7 +1,6 @@
 <template>
-  <header class="header-wrapper">
-    <HeaderTop />
-
+  <HeaderTop />
+  <header class="header-sticky">
     <div class="container header-main">
       <NuxtLink to="/" class="logo-wrapper">
         <img class="logo-img" src="~/assets/images/logo.png" alt="Watsons" />
@@ -47,9 +46,12 @@ import BasketIcon from "~/assets/icons/BasketIcon.svg";
 </script>
 
 <style scoped>
-.header-wrapper {
+.header-sticky {
   width: 100%;
-  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
 }
 
 .header-main {
