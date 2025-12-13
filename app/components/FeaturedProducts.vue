@@ -111,6 +111,7 @@ const { data: products, pending, error } = await getFeaturedProducts();
 
 .action-btn:first-child {
   border-right: 1px solid #ececec20;
+  flex: 1;
 }
 
 .action-icon {
@@ -171,7 +172,7 @@ const { data: products, pending, error } = await getFeaturedProducts();
 
   .product-card {
     max-width: 280px;
-    width: max-content;
+    width: 100%;
   }
 }
 </style>
