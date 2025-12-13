@@ -7,6 +7,7 @@
 
     <div class="input-wrapper" :class="{ 'has-end': $slots.icon }">
       <input
+        class="form-input"
         :id="id"
         :type="type"
         :placeholder="placeholder"

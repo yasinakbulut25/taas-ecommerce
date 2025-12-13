@@ -60,9 +60,9 @@
   position: relative;
 }
 
-input,
-select,
-textarea {
+.form-input,
+.form-select,
+.form-textarea {
   color: var(--text-primary);
   width: 100%;
   height: 48px;
@@ -90,19 +90,19 @@ textarea {
   padding-left: 0.5rem;
 }
 
-input::placeholder,
-select:invalid,
-textarea::placeholder {
+.form-input::placeholder,
+.form-select:invalid,
+.form-textarea::placeholder {
   color: #2a2a4899;
   font-family: var(--font-primary);
 }
 
-select:disabled {
+.form-select:disabled {
   background-color: #ececec4d;
   color: #2a2a4899;
 }
 
-textarea {
+.form-textarea {
   height: auto;
 }
 

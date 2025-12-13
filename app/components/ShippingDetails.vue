@@ -39,7 +39,7 @@
         <label for="city" class="form-label">
           City <span class="required">*</span>
         </label>
-        <select id="city" required>
+        <select class="form-select" id="city" required>
           <option>Please select</option>
           <option value="Istanbul">Istanbul</option>
         </select>
@@ -49,7 +49,7 @@
         <label for="district" class="form-label">
           District <span class="required">*</span>
         </label>
-        <select id="district" disabled required>
+        <select class="form-select" id="district" disabled required>
           <option>Please select</option>
         </select>
       </div>
@@ -59,6 +59,7 @@
           Address <span class="required">*</span>
         </label>
         <textarea
+          class="form-textarea"
           id="address"
           required
           rows="3"
