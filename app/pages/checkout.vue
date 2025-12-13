@@ -4,7 +4,7 @@
     <div class="container checkout-container">
       <div class="left-col">
         <ShippingDetails />
-        <div class="payment-details">payment-details</div>
+        <PaymentDetails />
       </div>
       <div class="right-col">
         <div class="order-summary">order-summary</div>
@@ -22,6 +22,13 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 40px;
+}
+
+.left-col {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 @media (max-width: 992px) {
