@@ -133,6 +133,10 @@ import BaseInput from "@/components/form/BaseInput.vue";
   margin-bottom: 0.25rem;
 }
 
+.card-info-text.bold {
+  font-weight: 500;
+}
+
 .card-preview-text {
   color: var(--text-secondary);
   font-size: 16px;
